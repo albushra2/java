@@ -1,0 +1,34 @@
+body{
+    background-color: orange;
+    padding: 20px;
+}
+.cantainer{
+    display: flex;
+    padding: 5px;
+
+
+}
+.green{
+    background-color:green ;
+}
+.yellow{
+    background-color: yellow;
+}
+.purple{
+    background-color: purple;
+}
+.grey{
+    background-color: grey;
+}
+.blue{
+    background-color: blue;
+}
+.orange{
+    background-color: orange;
+}
+.pink{
+    background-color: pink;
+}
+.red{
+    background-color: red;
+}

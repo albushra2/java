@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> calculator</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #b5c69b;
+    }
+
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      grid-gap: 10px;
+      background-color: #87ceeb; 
+      padding: 20px;
+      box-shadow: 10px 5px 10px rgba(37, 33, 33, 0.3);
+    }
+
+    .calculator textarea {
+      grid-column: span 4;
+      height: 50px;
+      font-size: 24px;
+      text-align: right;
+      background-color: #f4fefa;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .calculator button {
+      font-size: 20px;
+      background-color: #ffffff;
+      border: none;
+      padding: 20px;
+      box-shadow: 10px 3px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    .calculator button:hover {
+      background-color: #d6e9f5; 
+    }
+
+    .calculator .clear {
+      background-color: #f08080; 
+      color: white;
+    }
+
+    .calculator .operator {
+      background-color: #f9f978; 
+    }
+
+    .calculator .equal {
+      background-color: #87cefa;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <textarea readonly></textarea>
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button class="operator">+</button>
+
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button class="operator">-</button>
+
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="operator">*</button>
+
+    <button class="clear">C</button>
+    <button>0</button>
+    <button class="equal">=</button>
+    <button class="operator">/</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f9f4e7;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.article-box {
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.article-box.dashed-box {
+    border: 2px dashed black;
+    padding: 15px;
+}
+
+.article-box.purple-box {
+    border: 2px solid gray;
+    color: purple;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: orange;
+    font-weight: bold;
+}

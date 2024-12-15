@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox3</title>
+    <style>
+       .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: center;
+          
+           
+        }
+
+        .flex-item-left {
+            background-color: orange;
+            padding: 10px;
+            flex: 50%;
+            height: 1000px;
+            align-content: center;
+
+            
+        }
+        
+        .flex-item-right {
+            background-color: dodgerblue;
+            padding: 10px;
+            flex: 50%;
+            height: 1000px;
+            align-content: center;
+
+        }
+
+        h1 {
+            color: white;
+             align-items: center;
+        }
+
+        .flex-item-right h1 {
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <h1>First Part</h1>
+        </div>
+        <div class="flex-item-right">
+            <h1>Second Part</h1>
+        </div>
+    </div>
+</body>
+</html>

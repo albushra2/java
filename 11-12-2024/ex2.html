@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and Links -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Linking External Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <h2 class="logo"><span>M</span>-SoftTech</h2>
+        <ul>
+            <!-- Sidebar Links -->
+            <li><i class="fa-solid fa-gauge"></i> Dashboard</li>
+            <li><i class="fa-solid fa-users"></i> Customers</li>
+            <li><i class="fa-solid fa-list"></i> Projects</li>
+            <li><i class="fa-solid fa-bag-shopping"></i> Orders</li>
+            <li><i class="fa-solid fa-server"></i> Inventory</li>
+            <li><i class="fa-solid fa-user"></i> Accounts</li>
+            <li><i class="fa-solid fa-list-check"></i> Tasks</li>
+        </ul>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Header Section -->
+        <header>
+            <h1><i class="fa-solid fa-bars"></i> Dashboard</h1>
+            <div class="user-info">
+                <!-- User Info Section -->
+                <img src="me.png" alt="User Profile Picture" class="profile-pic">
+                <div class="user-details">
+                    <p>Manoj Adhikari</p>
+                    <span>UI/UX Designer</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Statistics Section -->
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-content">
+                    <div class="stat-number">67</div>
+                    <div class="stat-label">Customers</div>
+                </div>
+                <div class="stat-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-content">
+                    <div class="stat-number">88</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-icon">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-content">
+                    <div class="stat-number">99</div>
+                    <div class="stat-label">Orders</div>
+                </div>
+                <div class="stat-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-content">
+                    <div class="stat-number">78</div>
+                    <div class="stat-label">Tasks</div>
+                </div>
+                <div class="stat-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section">
+            <!-- Top Selling Projects Section -->
+            <div class="top-projects">
+                <div class="top-header">
+                    <h2 class="topSelling">Top Selling Projects</h2>
+                    <button class="see-all-btn">See All</button>
+                </div>
+                <!-- Table for Top Selling Projects (Can be modified to lines if needed) -->
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Contact</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                    </tr>
+                    <tr>
+                        <td>Centro comercial Moctezuma</td>
+                        <td>Francisco Chang</td>
+                        <td>Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>Ernst Handel</td>
+                        <td>Roland Mendel</td>
+                        <td>Austria</td>
+                    </tr>
+                    <tr>
+                        <td>Island Trading</td>
+                        <td>Helen Bennett</td>
+                        <td>UK</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Total Sales Section -->
+            <div class="total-sales">
+                <div class="top-header">
+                    <h2 class="total">Total Sale</h2>
+                    <button class="see-all-btn">See All</button>
+                </div>
+                <div class="sales-chart">
+                    <div class="radial-bar">
+                        <svg>
+                            <circle class="path path-1" cx="50%" cy="50%" r="40%"></circle>
+                        </svg>
+                        <div class="percentage">70%</div>
+                        <div class="text">Sales</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

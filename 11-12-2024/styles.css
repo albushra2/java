@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+/* الشريط الجانبي */
+.sidebar {
+    width: 250px;
+    background-color: #232738;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.sidebar h2 span {
+    color: #f54a48;
+}
+
+/* القائمة الجانبية */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    display: flex; /* ترتيب الأيقونة والنص بجانب بعض */
+    align-items: center; /* محاذاة عمودية متوسطة */
+    margin: 15px 0;
+    padding: 10px;
+    color: #999;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li i {
+    margin-right: 10px; /* مسافة بين الأيقونة والنص */
+    font-size: 1.2em; /* حجم الأيقونة */
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    background-color: #44485d;
+    border-radius: 5px;
+    color: #fff; /* تغيير اللون إلى الأبيض عند التحويم */
+}
+
+.sidebar ul li:hover i {
+    color: #fff; /* تغيير لون الأيقونة إلى الأبيض عند التحويم */
+}
+
+/* عندما يكون العنصر محدد */
+.sidebar ul li.selected {
+    color: #999; /* اللون الرمادي عندما يتم تحديد العنصر */
+}
+
+.sidebar ul li.selected i {
+    color: #999; /* لون الأيقونة يكون رمادي عند تحديد العنصر */
+}
+
+/* محتوى الصفحة الرئيسية */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #1c1e29;
+    color: white;
+}
+
+/* الرأس */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #232738;
+    color: white;
+}
+
+header h1 i {
+    margin-right: 10px; /* إضافة مسافة إلى اليمين للأيقونة */
+}
+
+/* معلومات المستخدم */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* مسافة بين الصورة ومعلومات المستخدم */
+}
+
+.profile-pic {
+    width: 50px; /* حجم الصورة */
+    height: 50px;
+    border-radius: 50%; /* لتكون الصورة دائرية */
+    object-fit: cover; /* ضمان تناسب الصورة */
+    border: 2px solid #ddd; /* إطار خفيف حول الصورة */
+}
+
+.user-details p {
+    margin: 0;
+    font-weight: bold;
+    color: #fff; /* لون النص */
+}
+
+.user-details span {
+    font-size: 0.9em;
+    color: #999; /* لون النص */
+}
+
+/* الإحصائيات */
+.stats {
+    display: flex;
+    gap: 20px; /* المسافة بين الـ stat-box */
+}
+
+.stat-box {
+    background-color: #323647;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    color: white;
+    text-align: left;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-number {
+    font-size: 2em; /* حجم الرقم */
+    font-weight: bold;
+    color: #fff;
+}
+
+.stat-label {
+    font-size: 1em; /* حجم النص */
+    color: #999999;
+}
+
+/* الأيقونة */
+.stat-icon {
+    font-size: 2.5em;
+    color: #999999;
+    align-self: center;
+}
+
+/* القسم السفلي */
+.bottom-section {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.topSelling {
+    color: #f54a48;
+}
+
+.top-projects, .total-sales {
+    background-color: #323647;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+/* الزر */
+.see-all-btn {
+    background-color: white; /* خلفية الزر باللون الأبيض */
+    color: #f54a48; /* لون النص باللون الأحمر */
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.see-all-btn:hover {
+    background-color: #f54a48; /* تغيير خلفية الزر إلى الأحمر عند التحويم */
+    color: white; /* تغيير لون النص إلى الأبيض */
+}
+
+/* رأس الجدول */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* إزالة الحدود من الأعمدة */
+table th, table td {
+    border: none;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+/* إضافة الحدود للصفوف فقط */
+table tr {
+    border-bottom: 1px solid #444; /* حد أسفل الصف */
+}
+
+/* الرسم البياني */
+.sales-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+}
+
+.total {
+    color: #f54a48;
+}
+
+.radial-bar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.radial-bar svg {
+    transform: rotate(-90deg); /* لجعل الدورة تبدأ من الأعلى */
+    width: 100%;
+    height: 100%;
+}
+
+.path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-dasharray: 251.2; /* محيط الدائرة: 2πr = 2 * 3.14 * 40 */
+    stroke-dashoffset: 251.2;
+    animation: animatePath 2s ease-out forwards; /* الأنميشن */
+}
+
+.path-1 {
+    stroke: #f54a48; /* اللون الأحمر */
+    fill: #fff; /* الجزء الداخلي من الدائرة باللون الأبيض */
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 500;
+    color: #000; /* تغيير اللون إلى الأسود */
+    z-index: 1;
+    animation: showText 1s ease-in-out forwards;
+}
+
+.text {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 500;
+    color: #aaa;
+}
+
+/* الأنميشن لملء الدائرة */
+@keyframes animatePath {
+    100% {
+        stroke-dashoffset: 75.36; /* تمثل 70% من المحيط */
+    }
+}
+
+/* الأنميشن لظهور النص */
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}

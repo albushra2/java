@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h2>Our First Form!</h2>
+
+    <fieldset style="width: 300px; padding: 15px; border: 2px solid #000;">
+        <legend style="font-weight: bold;">Login Details</legend>
+        <form action="login_process.php" method="post">
+         
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required style="width: 95%;">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required style="width: 95%;">
+            <br><br>
+
+            <button type="submit" style="width: 100%;">Login</button>
+        </form>
+    </fieldset>
+</body>
+</html>
